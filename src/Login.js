@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 const Login = () => {
 
   const elements = [
-    { img: "../login_error.png", label: "Login" },
-    { img: "../login_success.svg", label: "Logout" }
+    { img: "../login_error.png", label: "Login", text: "Por favor, faça o login." },
+    { img: "../login_success.svg", label: "Logout", text: "Seja bem-vindo!" }
   ]
 
   const [statusElement, setStatusElement] = useState({
@@ -24,7 +24,8 @@ const Login = () => {
   return (
     <div>
       <p />
-
+        { elementLogin.text }
+      <p />
       <div>
         <img src={ elementLogin.img } className="imageLogin" />
       </div>
