@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, {Component} from 'react';
 import TextEditor from './TextEditor';
-
+import Login from './Login'
 
 
 class App extends Component {
@@ -12,6 +12,8 @@ class App extends Component {
       <header className="App-header">
 
         <TextEditor />
+        
+        <Login />
       
       </header>
     </div>
